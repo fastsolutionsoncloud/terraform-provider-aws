@@ -2,11 +2,7 @@ terraform {
   required_version = ">= 0.12"
 }
 
-provider "aws" {
-  region = var.aws_region
-  access_key = "AKIAZGSLTKOQSJ4FQRXS"
-  secret_key = "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"
-}
+provider "aws" {}
 
 data "aws_availability_zones" "available" {}
 
